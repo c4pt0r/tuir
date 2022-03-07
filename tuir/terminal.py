@@ -137,7 +137,7 @@ class Terminal(object):
                 # If you're using OS X and you want to access a terminal
                 # browser, you need to set it manually via $BROWSER.
                 # See issue #166
-                display = True
+                display = False
             else:
                 display = bool(os.environ.get("DISPLAY"))
 
