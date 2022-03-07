@@ -181,7 +181,8 @@ class OAuthHelper(object):
             address = ('', self.config['oauth_redirect_port'])
             self.server = OAuthHTTPServer(address, OAuthHandler)
 
-        if self.term.display:
+        #if self.term.display:
+        if True:
             # Open a background browser (e.g. firefox) which is non-blocking.
             # The server will block until it responds to its first request,
             # at which point we can check the callback params.
